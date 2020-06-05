@@ -1,4 +1,4 @@
-* Fake D
+* fake_d
 
 Fake a two dimensional array using a one dimensional array.
 
