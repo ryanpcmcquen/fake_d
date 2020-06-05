@@ -1,4 +1,4 @@
-# Fake D
+* Fake D
 
 Fake a two dimensional array using a one dimensional array.
 
@@ -21,7 +21,7 @@ Include the lib:
 #include "fake_d.h"
 #+END_SRC
 
-Then declare and zero your array using ~FD_get_total_length()~, for example:
+Then declare and zero your array:
 
 #+BEGIN_SRC C
 int arr[FD_get_total_length()];
