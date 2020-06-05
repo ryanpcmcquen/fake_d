@@ -2,7 +2,7 @@ int FD_upper_bound = 100;
 
 int FD_get_total_length()
 {
-    return FD_upper_bound * (FD_upper_bound + 1);
+    return (FD_upper_bound * FD_upper_bound) + (FD_upper_bound * 2);
 }
 
 void FD_zero(int arr[])
