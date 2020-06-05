@@ -4,7 +4,7 @@ Fake a two dimensional array using a one dimensional array.
 
 Why? 2d arrays can be a pain to manage in low level languages. This library gives you the interface of a 2d array with the advantages of a 1d array (simpler allocation, easier use of stack memory, et cetera).
 
-5 symbols are provided:
+5 items are provided:
 
 - ~FD_upper_bound~
 - ~FD_get_total_length()~
