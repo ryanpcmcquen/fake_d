@@ -1,0 +1,2 @@
+language = "c"
+run = "clang -pthread -lm -o demo demo.c && ./demo"

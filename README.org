@@ -36,3 +36,7 @@ FD_set(arr, 11, 7, 42);
 FD_get(arr, 11, 7);
 // => 42
 #+END_SRC
+
+-----
+
+[[https://repl.it/github/ryanpcmcquen/fake_d][Test it on repl.it]]
