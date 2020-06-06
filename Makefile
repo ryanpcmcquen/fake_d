@@ -26,16 +26,16 @@ RELEASE=$(COMPILE) $(TARGET)
 DEBUG=$(COMPILE) -fsanitize=address -g $(TARGET)
 
 $(TITLE): *.c *.h
-    $(RELEASE)
+	$(RELEASE)
 # Windows will automatically overwrite
 # the binary when using `nmake`, but
 # we add the clean command for
 # people who like that kind
 # of thing.
 clean:
-    $(RM) $(TITLE)
-    $(RM) $(TITLE).exe
+	$(RM) $(TITLE)
+	$(RM) $(TITLE).exe
 force:
-    $(RELEASE)
+	$(RELEASE)
 debug: *.c *.h
-    $(DEBUG)
+	$(DEBUG)

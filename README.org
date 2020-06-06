@@ -13,7 +13,7 @@ Why? 2d arrays can be a pain to manage in low level languages. This library give
 - ~FD_get(int arr[], int x, int y)~
 
 
-~FD_upper_bound~ defaults to ~100~, but you can set it to whatever type of space you need. Declare this before anything else.
+~FD_upper_bound~ defaults to ~100~, but you can set it to accomodate whatever you need. Declare this before anything else.
 
 Include the lib:
 
@@ -33,8 +33,12 @@ Now, you can freely, get and set ~x~ and ~y~ coordinates as if you were using a 
 
 #+BEGIN_SRC C
 FD_set(arr, 11, 7, 42);
-FD_get(arr, 11, 7);
-// => 42
+
+printf(
+    "11, 7 = %i\n",
+    FD_get(arr, 11, 7));
+
+// 11, 7 = 42
 #+END_SRC
 
 -----
