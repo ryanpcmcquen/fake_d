@@ -6,12 +6,12 @@ Why? 2d arrays can be a pain to manage in low level languages. This library give
 
 6 items are provided:
 
-- ~FD_upper_bound~
-- ~FD_get_total_length()~
-- ~FD_fill(int arr[], int filler)~
-- ~FD_zero(int arr[])~
-- ~FD_set(int arr[], int x, int y, int val)~
-- ~FD_get(int arr[], int x, int y)~
+- ~int FD_upper_bound~
+- ~int FD_get_total_length()~
+- ~void FD_fill(int arr[], int filler)~
+- ~void FD_zero(int arr[])~
+- ~void FD_set(int arr[], int x, int y, int val)~
+- ~int FD_get(int arr[], int x, int y)~
 
 
 ~FD_upper_bound~ defaults to ~100~, but you can set it to accomodate whatever you need. Declare this before anything else.
