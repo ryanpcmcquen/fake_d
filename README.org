@@ -4,10 +4,11 @@ Fake a two dimensional array using a one dimensional array.
 
 Why? 2d arrays can be a pain to manage in low level languages. This library gives you the interface of a 2d array with the advantages of a 1d array (simpler allocation, easier use of stack memory, et cetera).
 
-5 items are provided:
+6 items are provided:
 
 - ~FD_upper_bound~
 - ~FD_get_total_length()~
+- ~FD_fill(int arr[], int filler)~
 - ~FD_zero(int arr[])~
 - ~FD_set(int arr[], int x, int y, int val)~
 - ~FD_get(int arr[], int x, int y)~
@@ -21,15 +22,29 @@ Include the lib:
 #include "fake_d.h"
 #+END_SRC
 
-Then declare and zero your array:
+If you plan to change the upper bound, declare it:
+
+#+BEGIN_SRC C
+FD_upper_bound = 500;
+#+END_SRC
+
+Then declare your array:
 
 #+BEGIN_SRC C
 int arr[FD_get_total_length()];
+#+END_SRC
+
+Optionally, you can zero or fill the array:
+
+#+BEGIN_SRC C
 FD_zero(arr);
 #+END_SRC
 
-Now, you can freely, get and set ~x~ and ~y~ coordinates as if you were using a 2d array:
+#+BEGIN_SRC C
+FD_fill(arr, -1);
+#+END_SRC
 
+Now, you can freely, get and set ~x~ and ~y~ coordinates as if you were using a 2d array:
 
 #+BEGIN_SRC C
 FD_set(arr, 11, 7, 42);

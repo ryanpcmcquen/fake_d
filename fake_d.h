@@ -5,13 +5,18 @@ int FD_get_total_length()
     return (FD_upper_bound * (FD_upper_bound + 1)) + (FD_upper_bound + 1);
 }
 
-void FD_zero(int arr[])
+void FD_fill(int arr[], int filler)
 {
     int index;
     int total_length = FD_get_total_length();
     for (index = 0; index < total_length; index++) {
-        arr[index] = 0;
+        arr[index] = filler;
     }
+}
+
+void FD_zero(int arr[])
+{
+    FD_fill(arr, 0);
 }
 
 void FD_set(int arr[], int x, int y, int val)
